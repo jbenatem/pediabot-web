@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang=en>
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <title>Pediabot</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-inner-container">
+                <div class="header-text" style="display: inline-block">PEDIABOT</div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="column" class="main-content-area">
+                <div class="content-title">¡Bienvenido!</div>
+                <div class="main-text main-text-p1">Gracias por su colaboración, este prototipo ha sido desarrollado para mi proyecto de investigación titulado "Chatbot Pediátrico para la orientación sobre Apendicitis Aguda basado en NLP y clasificación con ML". Este Chatbot no le solicitará información personal y la información registrada en el chat no se almacenará en algún repositorio.<br /><br />Al terminar le agradeceré llenar la siguiente <a class="ctaLink" href="https://forms.gle/gTBfgJpSnb4WX4gR8"
+                        target="_blank">encuesta</a>. La información que usted proporcione se mantendrá en absoluta reserva y se empleará exclusivamente para fines académicos.</div>                
+            </div>
+        </div>
+        <div class="chatbot">
+            <div class="chatbutton" id="chatbutton" onclick="OpenChat()">
+                <img class="imagebutton" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Circle-icons-chat.svg/1024px-Circle-icons-chat.svg.png" alt="chatbutton"></img>
+            </div>
+            <div class="chatbox" id="chatbox">
+                <div class="chatheader">
+                    <div class="chatheader-text">
+                        <p class="header-title">PEDIABOT</p>
+                    </div>
+                    <div class="chatheader-hidebutton" onclick="CloseChat()">
+                        <p class="close-button">X</p>
+                    </div>
+                </div>
+                <div class="chatbody" id="chatbody" role="main"> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
